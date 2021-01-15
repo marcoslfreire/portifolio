@@ -13,6 +13,10 @@
   --font-secundary:"Josefin Slab",serif;
   --font-action:"Muli", serif;
 }
+html{
+  scroll-behavior: smooth;
+
+}
 
 .hamburguer {
   width: 2rem;
@@ -174,6 +178,7 @@ color: #000000;
   right: 0;
   right: -20rem;
   transition: all 1s;
+  z-index: 150;
 }
 
 .show-menu .sidebar{
@@ -531,4 +536,52 @@ grid-row: 2/3;
       grid-column: 2;
 
     }
+    footer{
+      width: 100%;
+      height: 10rem;
+      background-color: #17181b;
+      display: flex;
+      justify-content: center;
+      align-items: center0;
+
+    }
     
+    .footer-content{
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer-content p{
+      font-family: var(--font-secundary);
+      color: #a7a7a7;
+      font-size: 1.2rem;
+    }
+
+    .social-list a{
+      margin: 0;
+      color: #a7a7a7;
+      font-size: 1.3rem;
+
+    }
+
+    .social-list ul{
+      display: flex;
+
+    }
+
+    #link-topo{
+      position: fixed;
+      right: 3rem;
+      bottom: 3rem;
+      width: 3rem;
+      height: 3rem;
+      background:#6a3093; 
+      background:-webkit-linear-gradient(to left, #cbb4d4, #20002c);
+      background:linear-gradient(to left, #cbb4d4, #20002c);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      border-radius: .3rem;
+      box-shadow: 0 0.1rem 0.6rem #000000;
+    }

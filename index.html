@@ -22,7 +22,7 @@
       <span>Fechar</span>
     </div>
     
-    <header>
+    <header id="home">
       <!--.  <div class="img-perfil">
         <img src="imagens/perfiltest.png" alt="">
       </div>--> 
@@ -39,11 +39,11 @@
     <aside class="sidebar">
       <nav>
         <ul class="menu">
-          <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Conhecimento</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Contatos</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+          <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li class="menu-item"><a href="#contatos" class="menu-link">Contatos</a></li>
+          <li class="menu-item"><a href="#orcamentos" class="menu-link">Orçamento</a></li>
         </ul>
       </nav>
       <div class="social-midia">
@@ -56,7 +56,7 @@
       </div>
     </aside>
 
-    <section class="sessao-conhecimentos">
+    <section class="sessao-conhecimentos" id="conhecimentos">
       <div class="sessao-header">
         <h1>Conhecimento</h1>
       </div>
@@ -135,7 +135,7 @@
       </div>
     </section>
     <!--. sessão da aréa de projetos --> 
-    <section class="sessao-projetos">
+    <section class="sessao-projetos" id="projetos">
       <div class="sessao-header">
         <h1>Projetos</h1>
       </div>
@@ -187,7 +187,7 @@
       </div>
   </section>
 
-  <section class="sessao-contato">
+  <section class="sessao-contato" id="contatos">
     <div class="contato-wrapper">
       <div class="contato-left"></div>
       <div class="contato-right">
@@ -212,7 +212,7 @@
   </section>
 
 
-  <section class="sessao-orcamento">
+  <section class="sessao-orcamento" id="orcamentos">
     <div class="orcamento-wrapper">
       <h1>Faça seu orçamento</h1>
       <form >
@@ -237,11 +237,33 @@
       </form>
     </div>
   </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        Copyright &copy; 2020, Marcos Luciano Freire da Costa
+      </p>
+      <div class="social-list">
+        <ul>
+          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+          
+    </div>
+  </footer>
+  <a href="#home" id="link-topo">
+    <i class="fas fa-arrow-up"></i>
+  </a>
 </div>
 <script src="script.js"></script>
 </body>
 
-
-
-
 </html>
+
+
+
+

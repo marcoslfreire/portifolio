@@ -87,16 +87,7 @@ header{
   overflow: hidden;
   background-color: rgba(0,0,0,0.8);
 } 
-.img-perfil{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border-radius: 50%;
-  margin: 60px;
-  margin-top: 20px;
-  z-index: 1;
-  
-  }
+
 
 .img-wrapper img{
   width: 100%;
@@ -296,3 +287,102 @@ grid-row: 2/3;
      font-size: var(--font-secundary);
      margin-top: 1rem;
    }
+
+   .projetos{
+     display: flex;
+     justify-content: space-evenly;
+   }
+
+   .card{
+     width: 18rem;
+     height: 25rem;
+     position: relative;
+   }
+   .card-img-wrapper{
+     width: 100%;
+     height: 100%;
+     background-color: #555;
+     border-radius: .5rem;
+    }
+
+    .card-img-wrapper img{
+      border-radius: .5rem;
+      object-fit: cover;
+      width: 100%;
+      height:100%;
+      opacity: 0.8;
+      transition: opacity .3s;
+    }
+
+    .card:hover .card-img-wrapper img{
+     opacity: .5; 
+    }
+
+    .card-info{
+      position: absolute;
+      bottom:0;
+      opacity: 0;
+      visibility: hidden;
+      padding: 1rem;
+      text-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.4);
+      transition: all 1s;
+    }
+
+    .card-info h2{
+      font-family: var(--font-primary);
+      font-size: 2rem;
+      font-weight: bolder;
+      color: #eeeeee;
+    }
+
+    .card-info h3{
+      font-family: var(--font-secundary);
+      font-weight: bolder;
+      color: rgb(255, 4, 4);
+      margin-bottom: 2rem;
+    }
+    .card-info p{
+      font-family:var(--font-secundary);
+      color: #eee;
+      font-weight: 400;
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+
+    .card-info button{
+      
+      width: 8rem;
+      height: 2.5rem;
+      background:#6a3093; 
+      background:-webkit-linear-gradient(to left, #cbb4d4, #20002c);
+      background:linear-gradient(to left, #cbb4d4, #20002c);
+      font-family: var(--font-action);
+      font-size: .8rem;
+      color: #eee;
+      border-radius: .5rem;
+      border: none;
+      box-shadow: 0 .1rem .8rem rgba(0, 0,0, .4);
+    }
+
+    .card:hover .card-info{
+      bottom: 2rem;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .sessao-contato{
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contato-wrapper{
+      width: 60%;
+      display: flex;
+    }
+
+    .contato-left{
+      background: linear.gradient(rgba(15,15,15,.8), url(imagen/contato.jpg));
+    }

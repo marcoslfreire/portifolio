@@ -349,19 +349,22 @@ grid-row: 2/3;
       margin-bottom: 2rem;
     }
 
-    .card-info button{
-      
-      width: 8rem;
-      height: 2.5rem;
+    .btn{
       background:#6a3093; 
       background:-webkit-linear-gradient(to left, #cbb4d4, #20002c);
       background:linear-gradient(to left, #cbb4d4, #20002c);
       font-family: var(--font-action);
-      font-size: .8rem;
+      
       color: #eee;
       border-radius: .5rem;
       border: none;
       box-shadow: 0 .1rem .8rem rgba(0, 0,0, .4);
+    }
+
+    .card-info button{
+       width: 8rem;
+      height: 2.5rem;
+      
     }
 
     .card:hover .card-info{
@@ -381,8 +384,151 @@ grid-row: 2/3;
     .contato-wrapper{
       width: 60%;
       display: flex;
+      box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
     }
 
     .contato-left{
-      background: linear.gradient(rgba(15,15,15,.8), url(imagen/contato.jpg));
+      background: linear-gradient(rgba(15,15,15,0.6), url(imagens/contato.jpg));
+      background: cover;
     }
+
+    .contato-right{
+      width: 65%;
+      background-color: #eee;
+      padding: 1rem 3rem 3rem 3rem;
+
+    }
+
+    .sessao-contato{
+      font-family: var(--font-primary);
+      text-align: center;
+      color: #272727;
+      font-size: 3rem;
+      font-weight: lighter;
+
+    }
+
+    .sessao-contato form{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-group{
+      position: relative;
+    }
+
+    .field{
+      background: transparent;
+      border: none;
+      width: 20rem;
+      font-size: 1.5rem;
+      font-family: var(--font-secundary);
+      border-bottom: 2px dashed #636363;
+      height: 3rem;
+      outline: none;
+      margin: 1rem 0;
+    }
+
+    .input-group textarea{
+      padding-top: 1rem;
+      max-width: 15rem;
+      max-height: 3rem;
+    }
+
+    .field-label{
+      position: absolute;
+      left: 0;
+      top: 2rem;
+      font-size: 1.2rem;
+      font-family: var(--font-secundary);
+      text-transform: uppercase;
+      transition: all 0.3s;
+
+    }
+
+    .field:focus ~ label{
+      top: 0;
+      font-size: 1rem;
+    }
+
+    .field:focus {
+      border-bottom: 1px solid;
+    }
+
+    .btn-submit{
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      width: 100%;
+      height: 2rem;
+      margin-top: 1rem;
+      
+    }
+
+    .sessao-orcamento{
+      width: 100%;
+      height: 100vh;
+      background:url("./imagens/artificial-intelligence-3382507_1280.jpg");
+      object-fit: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .orcamento-wrapper{
+      width: 60%;
+      height: 80%;
+      background-color: #ffffff99;
+      border-radius: 10px;
+      box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,0.5);
+      position: relative;
+      
+    }
+
+    .sessao-orcamento h1{
+      position: absolute;
+      top: -2.5rem;
+      left: 2rem;
+      background:#6a3093; 
+      background:-webkit-linear-gradient(to left, #cbb4d4, #20002c);
+      background:linear-gradient(to left, #cbb4d4, #20002c);
+      padding: 0 3rem;
+      color: #fff;
+      font-family: var(--font-primary);
+      font-size: 3rem;
+      font-weight: lighter;
+      box-shadow:  0 0.1rem 0.3rem rgba(0,0,0,0.5);
+      border: 10px;
+    }
+
+    .sessao-orcamento form{
+      margin: 4rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 2rem;
+      row-gap: 2rem;
+    } 
+
+    .sessao-orcamento label{
+      font-family: var(--font-secundary);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .sessao-orcamento input[type="number"]{
+      font-family: var(--font-secundary);
+      width: 4rem;
+      height: 2rem;
+      outline: none;
+      border-radius: 10px;
+      border: none;
+      padding: 0.3rem;
+    }
+
+    .btn-orcamento{
+      text-transform: uppercase;
+      padding: 1rem;
+      cursor: pointer;
+      grid-column: 2;
+
+    }
+    

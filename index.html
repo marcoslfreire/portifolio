@@ -152,7 +152,7 @@
                Universidade da amazônia a 
                proposta foi uma aplicação 
                de pré-consulta</p>
-            <button>Saiba Mais</button>
+            <button class="btb">Saiba Mais</button>
             </div>
           </div>
           <div class="card">
@@ -168,7 +168,7 @@
               HTML, CSS e Javascrip, 
               utilizando os frameworks 
               Node.js e React</p>
-            <button>Saiba Mais</button>
+            <button class="btn">Saiba Mais</button>
           </div>
         </div>
         <div class="card">
@@ -181,7 +181,7 @@
             <p>repositório do projeto guiado por b7Web,para treinamento de 
               habilidades nas linguagens 
               HTML, CSS e Javascrip, </p>
-            <button>Saiba Mais</button>
+            <button class="btn">Saiba Mais</button>
           </div>
         </div>
       </div>
@@ -193,21 +193,48 @@
       <div class="contato-right">
         <h1>Contatos</h1>
         <form action="">
-          <div class="input group">
+          <div class="input-group">
             <input type="text" class="field" id="nome"> 
             <label for="nome" class="field-label">Nome</label>
           </div>
-          <div class="input group">
+          <div class="input-group">
             <input type="text" class="field" id="email">
             <label for="email" class="field-label">E-mail</label>
           </div>
-          <div class="input group" >
+          <div class="input-group" >
              <textarea class="field"id="mensagen"></textarea>
             <label for="mensagen" class="field-label">Mensagem</label>
           </div>
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn btn-submit">Enviar</button>
         </form>
       </div>
+    </div>
+  </section>
+
+
+  <section class="sessao-orcamento">
+    <div class="orcamento-wrapper">
+      <h1>Faça seu orçamento</h1>
+      <form >
+        <label for="qtde">Qtde de Páginas</label>
+        <input type="number" min="1" name="qtde" id="qtde">
+        <label for="js">Preciso de um Script js</label>
+        <input type="checkbox" name="js" id="js">
+        <label for="Layout"></label>
+        <div class="group-layout">
+          <div>
+            <input type="radio" name="layout" id="layout-sim">
+            <label for="layout-sin">Preciso de um layout</label>
+          </div>
+          <div>
+            <input type="radio" name="layout" id="layout-nao">
+            <label for="layout-sin">Já tenho um layout</label>
+          </div>
+        </div>
+        <label for="prazo">Prazo</label>
+        <input type="range" name="prazo" id="prazo">
+        <button class="btn btn-orcamento" type="submit">Enviar</button>
+      </form>
     </div>
   </section>
 </div>

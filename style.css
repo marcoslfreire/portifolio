@@ -131,9 +131,8 @@ animation: moveBanner 2s 0.5s forwards;
 .banner p{
   font-family: var(--font-secundary);
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 3rem;
   text-shadow: .2rem .2rem  rgba(0, 0,0,.4);
-  text-align: center;
   margin-bottom: 2rem;
   opacity: 0;
   animation: moveBanner 2s 0.7s forwards;
